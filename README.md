@@ -1,4 +1,4 @@
-# Ejercicio Calculadora
+# Ejercicio Conversion de Monedas
 
 ## Nombre
 

@@ -62,13 +62,14 @@ namespace ConversorDeMonedas
         private void acceptBtnClick(object sender, EventArgs e)
         {
             List<string> monSeleccionadas = [];
-            
+
             foreach (object itemChecked in monedasListBox.CheckedItems)
             {
                 monSeleccionadas.Add(itemChecked.ToString());
             }
 
-            FormPrincipal fPrincipal = new FormPrincipal(monSeleccionadas);
+            DatosGlobales.convMoneda.Clear();
+            DatosGlobales.convMoneda.AddRange(monSeleccionadas);
 
             this.Close();
         }
